@@ -1,0 +1,6 @@
+AWSTemplateFormatVersion: '2019-09-09'
+Description: Demo S3 bucket for T7
+
+Resources:
+  DemoBucket:
+    Type: AWS::S3::Bucket
