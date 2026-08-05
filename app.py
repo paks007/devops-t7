@@ -1,16 +1,18 @@
-password = "admin123"  # Consider removing this or using environment variables for sensitive data
+# If this is the problematic long line:
+password = "a_very_long_string_that_is_intentionally_made_long_to_test_flake8"
 
+# Change it to something like this:
+password = (
+    "a_very_long_string_that_is_intentionally_made_long_"
+    "to_test_flake8"
+)
 
 def add(a, b):
     return a + b
 
 
-# Make sure to break long lines to maintain less than 79 characters
-very_long_variable_name_that_exceeds_the_maximum_length = (
-    "This is a long string that should be broken into multiple lines."
-    " Make sure to keep individual lines less than 79 characters."
-)
-
+def another_function():
+    print("Some functionality")
 
 if __name__ == "__main__":
     print(add(2, 3))
