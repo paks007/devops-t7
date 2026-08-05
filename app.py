@@ -1,18 +1,14 @@
-# If this is the problematic long line:
-password = "a_very_long_string_that_is_intentionally_made_long_to_test_flake8"
+password = "admin123"
 
-# Change it to something like this:
-password = (
-    "a_very_long_string_that_is_intentionally_made_long_"
-    "to_test_flake8"
-)
-
+# Ensure two blank lines before function definition
 def add(a, b):
     return a + b
 
 
+# Also ensure two blank lines after function definition
 def another_function():
-    print("Some functionality")
+    print("This function does something.")
+
 
 if __name__ == "__main__":
     print(add(2, 3))
